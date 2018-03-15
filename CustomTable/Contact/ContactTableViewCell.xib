@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="KGk-i7-Jjw" customClass="ContactTableViewCell" customModule="CustomTable" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W01-bo-9rt">
+                        <rect key="frame" x="20" y="19" width="59" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="59" id="0hs-WI-pKr"/>
+                            <constraint firstAttribute="height" constant="30" id="H6v-8q-Ads"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A1c-Er-XOo">
+                        <rect key="frame" x="98" y="19" width="214" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="DvT-wV-OHd"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="A1c-Er-XOo" firstAttribute="leading" secondItem="W01-bo-9rt" secondAttribute="trailing" constant="19" id="7iu-Fi-NUg"/>
+                    <constraint firstAttribute="trailing" secondItem="A1c-Er-XOo" secondAttribute="trailing" constant="8" id="Hjy-gU-iFz"/>
+                    <constraint firstItem="W01-bo-9rt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="LVi-VS-QYq"/>
+                    <constraint firstItem="A1c-Er-XOo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SmH-Vg-bLb"/>
+                    <constraint firstItem="W01-bo-9rt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mCN-RI-78R"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="spaceConstraint" destination="7iu-Fi-NUg" id="rcT-nr-i06"/>
+                <outlet property="textField1" destination="A1c-Er-XOo" id="inY-Tk-OBs"/>
+                <outlet property="widthContraints" destination="0hs-WI-pKr" id="T7b-tp-xNG"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="67"/>
+        </tableViewCell>
+    </objects>
+</document>
